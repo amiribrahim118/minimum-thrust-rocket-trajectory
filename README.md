@@ -13,15 +13,12 @@ Determine a trajectory \( (x(t), y(t)) \) that minimises total thrust effort sub
 - Trade-off between acceleration cost and gravity cost
 
 ## Mathematical Approach
-The problem is formulated as a variational optimisation:
-\[
-J = \int_0^T \|u(t)\|^2 \, dt
-\]
+The problem is formulated using the calculus of variations. The Euler–Lagrange equations are applied to derive the trajectory that minimises total thrust effort.
 
-Using the Euler–Lagrange equations for higher-order systems:
-- Fourth-order differential equations are obtained
-- Solutions reduce to cubic polynomials in time
-- Boundary conditions determine a unique trajectory
+This leads to:
+- Fourth-order differential equations
+- Cubic polynomial solutions in time
+- A closed-form expression for the optimal flight time
 
 ## Repository Structure
 - `report/` → Full LaTeX report (PDF)
